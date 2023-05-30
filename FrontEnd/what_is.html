@@ -1,0 +1,307 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	 <http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- jQuery library -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+<link href="css/formulario.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet">
+	<script src="js/modernizr-2.8.3.min.js"></script>
+
+	<title>modelo de flaminghan</title>
+	<link rel="shortcut icon" href="icon/android-icon-96x96.png">
+</head>
+
+<body id="home">
+ 
+	
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<a class="navbar-brand" href="#home">framingham</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					
+					
+				</ul>
+			</div>
+		   
+		</div>
+	</nav> 
+<br>
+<br>
+
+	<div id="whatis" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>What is?</h2>
+			
+				
+				<p class="lead" style="margin-top:0">modelo de flamingham</p>
+				<br>
+				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-4 wow fadeInDown text-center">
+ <img class="img-responsive " style="border-radius: 40%" src="img/franin.png" alt="">
+				  <h3>Flamingham</h3>
+				  <p class="lead">El Framingham Heart Study (FHS), fruto de la colaboración entre National Heart, Lung and Blood Institute y la Universidad de Boston, es un estudio prospectivo de base poblacional que comenzó en Framingham en 1948. </p>
+
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="img-responsive " style="border-radius: 40%" src="img/cora.png" alt="">
+				   <h3>Modelo</h3>
+				   <p class="lead">estudio prospectivo de base poblacional que durante los últimos 66 años los investigadores han recogido datos sobre las enfermedades cardiovasculares y sus factores predisponentes. </p>
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="img-responsive " src="img/escala.png" alt="">
+				   <h3>Escala</h3>
+					<p class="lead">evalúa la probabilidad de que ocurra una enfermedad cardiovascular para una variable determinada, así encontramos: Hombres y mujeres tienen una probabilidad distinta de llegar a padecer una enfermedad cardiovascular. </p>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+		
+		</div>
+	</div>
+	
+	<br>
+	<br>
+	<!-- Use it -->
+    <div id ="useit" class="content-section-a">
+
+        <div class="container">
+			
+            <div class="row">
+			
+				<div class="col-sm-6 pull-right wow fadeInRightBig">
+				  <br>
+				  
+                    <img class="img-responsive " src="img/model.png" alt="">
+                </div>
+				
+                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
+                    <h3 class="section-heading">Modelo Flamingthan</h3>
+					
+                    <p class="lead">
+						Para el cálculo de la probabilidad de aparición de un suceso dicotómico (enfermedad NO, SI) el modelo
+
+matemático más habitual se basa en la utilización de la regresión logística, que produce una ecuación en la
+
+que conocidos los valores de los diferentes factores de riesgo se puede evaluar la probabilidad de aparición de
+la enfermedad. Resulta evidente que en muchos procesos dicha probabilidad depende del tiempo de
+exposición, aumentando a medida que éste transcurre, por lo que o bien el tiempo interviene en la ecuación
+como factor de riesgo, o bien se utiliza un modelo específico en el que se tenga en cuenta esta característica,
+calculando ahora la probabilidad de que el suceso ocurra en un momento de tiempo determinado. 
+					</p>
+
+<button onclick="document.getElementById('id').style.display='block'" style="width:auto; " class="btn btn-success">calcular datos</button>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-danger">exportar datos</button>
+ 
+    <div id="id" class="modal">
+     
+
+ <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      
+  <form class="modal-content animate" action="index.php">
+
+            <div
+ class="container">
+<center>
+  <h3>Guardar Datos</h3> 
+</center> 
+<br>
+              <label><b>Nombre: </b></label>
+                <input type="text" placeholder="ingrese su nombre" name="nom" required>
+ 
+                <label><b>Apellido: </b></label>
+                <input type="text" placeholder="ingrese su apellido" name="ape" required>
+ 
+                <label><b>Identificacion: </b></label>
+                <input type="text" placeholder="digite su identificación" name="id" required>
+ 
+
+<label><b>Telefono: </b></label>
+                <input type="text" placeholder="digite su teléfono" name="tele" required>
+ 
+
+
+<label><b>Direccion: </b></label>
+                <input type="text" placeholder="digite su Direccion" name="direc" required>
+ 
+<br>
+<br>
+
+                <input type="checkbox" required > Aceptar procesamiento de datos
+                
+ 
+                <div class="clearfix">
+ 
+<button type="submit" class="btn btn-success">ingresar</button>                  
+<a href="what_is.html">
+ <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger" >Cancel</button>
+</a>
+                    
+
+                </div>
+            </div>
+        </form>
+    </div>
+ 
+
+
+<div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      
+  <form class="modal-content animate" role="form" action="tuarchivo.php" method="post" name="tuarchivo" enctype="multipart/form-data">
+
+            <div class="container">
+ 
+ <center>
+  <h3>Guardar datos</h3> 
+</center> 
+<br>              <label><b>Nombre:</b></label>
+                <input type="text" placeholder="digite su nombre" name="nom" required>
+ 
+                <label><b>Apellido:</b></label>
+                <input type="text" placeholder="digite su Apellido" name="ape" required>
+ 
+                <label><b>Identificacion: </b></label>
+                <input  placeholder="Ingrese su identificación" name="id" type="text" required>
+
+<label><b>Telefono: </b></label>
+                <input type="text" placeholder="ingrese su teléfono" name="id" required>
+
+
+<label><b>Direccion: </b></label>
+                <input type="text" placeholder="digite su Direccion" name="direc" required>
+
+<label><b>subir archivo: </b></label>
+                <input type="file" name="archivo" />
+
+<br>
+
+                <input type="checkbox" required> 
+aceptar procesamiento de datos              
+ 
+                <div class="clearfix">
+
+<button type="submit" class="btn btn-success">calcular datos</button>
+
+                    <a href="what_is.html">
+ <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger" >Cancel</button>
+</a>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!--close the modal by just clicking outside of the modal-->
+    <script>
+        var modal = document.getElementById('id01');
+ 
+var modal = document.getElementById('id');
+ 
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+    </script>
+ 
+
+
+			
+				</div>   
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+    <br>
+    <br>
+ 
+
+  
+<footer class="text-center text-lg-start bg-light text-muted">
+  <br>
+  <br>
+
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+  
+    <div class="me-5 d-none d-lg-block">
+      <h4 class="font-weight-bold"style="color: #778899">corporacion universitaria Rafael Nuñez</h4>
+    </div>
+    
+  </section>
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      
+      <div class="row mt-3">
+    
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+          <h5 class="text-uppercase fw-bold mb-4" style="color: #778899">
+            <i class="fas fa-gem me-3"></i>proposito del proyecto
+          </h5>
+          <p class="col-md-6 col-md-offset-3 text-center wrap_title" style="color: #778899">
+          lograr que las personas pueda
+          consultar acerca de su salud cardiovascular llenando un formulario y este haga una prediccion del riesgo cardiovascular en los próximos 10 años
+          </p>
+        </div>
+
+        
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+          <h4 class="text-uppercase fw-bold mb-4" style="color: #778899">Contact</h4>
+          <p><i class="fas fa-home me-3" style="color: #778899"></i> cartagena- Colombia</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+          crodrigueza21@curnvirtual.edu.co 
+          </p>
+          <p><i class="fas fa-phone me-3"></i>+57 3205576270</p>
+          <p><i class="fas fa-print me-3"></i>+57 300 3638437</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Curn.edu.co</a>
+  </div>
+  
+</footer>
+
+<script src="/BackEnd/js/main.js"></script>
+
+</body>
+  <!-- Modal -->
+
+
+</html>
